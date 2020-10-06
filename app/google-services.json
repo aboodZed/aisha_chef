@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "834529904084",
+    "firebase_url": "https://esha-435d3.firebaseio.com",
+    "project_id": "esha-435d3",
+    "storage_bucket": "esha-435d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834529904084:android:38be5bb10b503b458e8241",
+        "android_client_info": {
+          "package_name": "com.webapp.aisha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834529904084-uhjr8d7208j4b093qq9hk735srl0gekf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1pt-gZMgPlpzKS7tCJK4-tLaRxp9RFhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834529904084-uhjr8d7208j4b093qq9hk735srl0gekf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "834529904084-2lqcdu8gutontq4fgst14sutkqonqk0h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.AishaAgent",
+                "app_store_id": "1522203436"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834529904084:android:ecc34d93b2f3ae728e8241",
+        "android_client_info": {
+          "package_name": "com.webapp.esha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834529904084-v5vc1gr4e2q60ceo771qdpobovgrjipe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webapp.esha",
+            "certificate_hash": "0a09fecee7963a30de80a6187d646ff967e8c4ef"
+          }
+        },
+        {
+          "client_id": "834529904084-uhjr8d7208j4b093qq9hk735srl0gekf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1pt-gZMgPlpzKS7tCJK4-tLaRxp9RFhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834529904084-uhjr8d7208j4b093qq9hk735srl0gekf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "834529904084-2lqcdu8gutontq4fgst14sutkqonqk0h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.AishaAgent",
+                "app_store_id": "1522203436"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

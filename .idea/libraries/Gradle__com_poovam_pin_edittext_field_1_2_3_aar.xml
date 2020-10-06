@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.poovam:pin-edittext-field:1.2.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7477bc24d7d810e7138c392f1af6737a/jetified-pin-edittext-field-1.2.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7477bc24d7d810e7138c392f1af6737a/jetified-pin-edittext-field-1.2.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7477bc24d7d810e7138c392f1af6737a/jetified-pin-edittext-field-1.2.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.poovam/pin-edittext-field/1.2.3/e30464a6848089facfee5e271c3a77cb5195ee38/pin-edittext-field-1.2.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.poovam/pin-edittext-field/1.2.3/1cce67cf84ea66d2d52edebbbc635f6d7e0a2631/pin-edittext-field-1.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

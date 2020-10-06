@@ -1,0 +1,66 @@
+package com.webapp.aisha.feture.registration.reset.stepOne;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+
+import androidx.fragment.app.Fragment;
+
+import com.webapp.aisha.R;
+import com.webapp.aisha.utils.NavigateUtils.NavigationView;
+import com.webapp.aisha.utils.dialogs.WaitDialogFragment;
+import com.webapp.aisha.utils.listener.DialogView;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
+public class ResetStepOneFragment extends Fragment implements DialogView {
+
+    @BindView(R.id.iv_back) ImageView ivBack;
+    @BindView(R.id.et_phone) EditText etPhone;
+    @BindView(R.id.btn_send_code) Button btnSendCode;
+
+    private NavigationView view;
+    private ResetStepOnePresenter presenter;
+
+    public static ResetStepOneFragment newInstance(NavigationView navigationView) {
+        return new ResetStepOneFragment(navigationView);
+    }
+
+    public ResetStepOneFragment(NavigationView view) {
+        this.view = view;
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.fragment_reset_step_one, container, false);
+        ButterKnife.bind(this, v);
+        presenter = new ResetStepOnePresenter(getActivity(),view,this);
+        return v;
+    }
+
+    @OnClick(R.id.iv_back)
+    public void back(){
+        getActivity().onBackPressed();
+    }
+
+    @OnClick(R.id.btn_send_code)
+    public void sendCode(){
+        presenter.validateInput(etPhone);
+    }
+
+    @Override
+    public void showDialog(String s) {
+        WaitDialogFragment.newInstance(s).show(getFragmentManager(),"");
+    }
+
+    @Override
+    public void hideDialog() {
+        WaitDialogFragment.newInstance("").dismiss();
+    }
+}

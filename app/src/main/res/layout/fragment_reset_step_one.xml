@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.webapp.aisha.feture.registration.reset.stepOne.ResetStepOneFragment">
+
+    <include layout="@layout/toolbar_back_button"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/no_focus_edit_text"
+        android:layout_margin="@dimen/medium_margin"
+        android:padding="@dimen/medium_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_text"
+            android:text="@string/reset_your_password"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_string"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/small_text"
+            android:layout_margin="@dimen/medium_margin"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:hint="@string/phone_number"
+            android:padding="@dimen/small_padding"
+            android:layout_marginBottom="@dimen/small_margin">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_send_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:background="@drawable/yellow_button"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:foreground="?selectableItemBackground"
+            android:text="@string/send_code"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

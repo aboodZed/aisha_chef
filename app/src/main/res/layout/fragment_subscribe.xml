@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feture.subscribe.subscribe.SubscribeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/ll_bottom">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/small_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/medium_padding"
+                android:text="@string/subscribe"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_your_plan"
+                android:layout_marginStart="@dimen/medium_padding"/>
+
+        </LinearLayout>
+
+        <com.webapp.aisha.utils.view_adapter.KKViewPager
+            android:id="@+id/vp_subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/medium_margin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/no_focus_edit_text"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:padding="@dimen/medium_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_padding"
+            android:text="@string/pay_method"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_bank_transfer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_button"
+                android:padding="@dimen/medium_padding"
+                android:text="@string/bank_transfer" />
+
+            <RadioButton
+                android:id="@+id/rb_credit_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_button"
+                android:padding="@dimen/medium_padding"
+                android:text="@string/credit_card" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.webapp.aisha.feture.registration.reset.stepTwo.ResetStepTwoFragment">
+
+    <include layout="@layout/toolbar_back_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:background="@drawable/no_focus_edit_text"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/phone_verification"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/medium_margin"
+            android:text="@string/verify_string"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/small_text" />
+
+        <com.poovam.pinedittextfield.SquarePinField
+            android:id="@+id/spf_pin"
+            android:layoutDirection="ltr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSelectHandle="@drawable/text_handle"
+            android:textSize="@dimen/text"
+            app:cornerRadius="@dimen/small_padding"
+            app:fieldBgColor="@color/white"
+            app:highlightColor="@color/colorPrimary"
+            app:noOfFields="4"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/small_margin">
+
+            <TextView
+                android:id="@+id/tv_resend_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                android:text="@string/resend_string"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yellow_button"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingEnd="@dimen/medium_padding"
+                android:paddingBottom="@dimen/small_padding"
+                android:visibility="gone"
+                android:text="Resend"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

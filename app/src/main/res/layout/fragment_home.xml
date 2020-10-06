@@ -1,0 +1,162 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.webapp.aisha.feture.main.home.HomeFragment"
+    android:paddingStart="@dimen/medium_padding"
+    android:paddingEnd="@dimen/medium_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/categories"
+           android:textColor="@color/black"
+           android:textSize="@dimen/large_text"
+           android:padding="@dimen/small_padding" />
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:nestedScrollingEnabled="false"
+           android:id="@+id/rv_categories"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+        <FrameLayout
+        android:id="@+id/fl_load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/add_something"
+           android:textColor="@color/black"
+           android:layout_marginTop="@dimen/medium_margin"
+           android:textSize="@dimen/large_text"
+           android:padding="@dimen/small_padding" />
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/cl_an_offer"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/white_button"
+           android:padding="@dimen/medium_padding"
+           android:layout_marginBottom="@dimen/small_margin">
+
+           <ImageView
+               android:id="@+id/iv_an_offer"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_an_offer"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/margin"
+               android:text="@string/an_offer"
+               android:textSize="@dimen/text"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toEndOf="@+id/iv_an_offer"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_arrow_forward"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/cl_today_dish"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/white_button"
+           android:padding="@dimen/medium_padding"
+           android:layout_marginBottom="@dimen/small_margin">
+
+           <ImageView
+               android:id="@+id/iv_today_dish"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_today_dish"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/margin"
+               android:text="@string/today_dish"
+               android:textSize="@dimen/text"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toEndOf="@+id/iv_today_dish"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_arrow_forward"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/cl_reservations"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/white_button"
+           android:padding="@dimen/medium_padding">
+
+           <ImageView
+               android:id="@+id/iv_reservations"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_reservations"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/margin"
+               android:text="@string/reservations"
+               android:textSize="@dimen/text"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toEndOf="@+id/iv_reservations"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_arrow_forward"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

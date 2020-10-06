@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/white_button"
+    android:padding="@dimen/medium_padding">
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_delete"
+        android:padding="@dimen/medium_padding"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_gravity="end"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_Language"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/large_text"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/medium_margin"/>
+
+    <TextView
+        android:id="@+id/tv_arabic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/arabic"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium_text"
+        android:gravity="center"
+        android:background="@drawable/gray_button"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:padding="@dimen/small_padding"/>
+
+    <TextView
+        android:id="@+id/tv_english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/english"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium_text"
+        android:gravity="center"
+        android:background="@drawable/gray_button"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:padding="@dimen/small_padding"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:oppwa.mobile:unspecified@jar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/oppwa.mobile/build/.transforms/c450109e5d4c144ff71415dc934af1db/jetified-oppwa.mobile/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/oppwa.mobile/build/.transforms/c450109e5d4c144ff71415dc934af1db/jetified-oppwa.mobile/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/oppwa.mobile/build/.transforms/c450109e5d4c144ff71415dc934af1db/jetified-oppwa.mobile/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

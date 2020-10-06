@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:alipaySdk-15.5.9:unspecified@jar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/alipaySdk-15.5.9/build/.transforms/9a7e2b24d0166935ea0bf6f3ad9278ac/jetified-alipaySdk-15.5.9/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/alipaySdk-15.5.9/build/.transforms/9a7e2b24d0166935ea0bf6f3ad9278ac/jetified-alipaySdk-15.5.9/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/alipaySdk-15.5.9/build/.transforms/9a7e2b24d0166935ea0bf6f3ad9278ac/jetified-alipaySdk-15.5.9/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

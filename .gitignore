@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/alipaySdk-15.5.9/build/
+/oppwa.mobile/build/

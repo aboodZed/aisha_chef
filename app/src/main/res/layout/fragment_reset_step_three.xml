@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.webapp.aisha.feture.registration.reset.stepThree.ResetStepThreeFragment">
+
+    <include layout="@layout/toolbar_back_button"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:background="@drawable/no_focus_edit_text"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/phone_verification"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/medium_margin"
+            android:text="@string/refresh_password"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/small_text" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:hint="@string/password"
+            android:padding="@dimen/small_padding"
+            android:layout_marginBottom="@dimen/small_margin">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:hint="@string/conform_password"
+            android:padding="@dimen/small_padding"
+            android:layout_marginBottom="@dimen/small_margin">
+
+            <EditText
+                android:id="@+id/et_conform_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:background="@drawable/yellow_button"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:foreground="?selectableItemBackground"
+            android:text="@string/refresh"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

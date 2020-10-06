@@ -1,0 +1,271 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feture.meals.edit.EditMealFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_edit_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_add_photo"
+                android:layout_width="@dimen/large_image"
+                android:layout_height="@dimen/logo_height"
+                android:layout_margin="@dimen/small_padding"
+                android:background="@drawable/white_button"
+                android:padding="@dimen/medium_padding"
+                android:src="@drawable/ic_yellow_upload" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_meal_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:background="@drawable/white_button"
+            android:padding="@dimen/small_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:text="@string/available"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/s_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_margin"
+                android:theme="@style/SwitchThemeOverlay"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_button"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_padding">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:hint="@string/meal_title"
+                android:padding="@dimen/small_padding"
+                android:layout_marginBottom="@dimen/small_margin">
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="text"
+                    android:focusable="false"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:hint="@string/meal_title_in_arabic"
+                android:padding="@dimen/small_padding"
+                android:layout_marginBottom="@dimen/small_margin">
+
+                <EditText
+                    android:id="@+id/et_title_in_arabic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="text"
+                    android:focusable="false"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--
+            <EditText
+                android:id="@+id/et_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:autofillHints="@string/meal_price"
+                android:background="@drawable/edit_text"
+                android:hint="@string/meal_price"
+                android:inputType="number"
+                android:padding="@dimen/medium_padding"
+                android:focusable="false"/>
+-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:hint="@string/preparing_within"
+                android:padding="@dimen/small_padding"
+                android:layout_marginBottom="@dimen/small_margin">
+
+                <EditText
+                    android:id="@+id/et_preparing_within"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="number"
+                    android:focusable="false"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:hint="@string/meal_details"
+                android:padding="@dimen/small_padding"
+                android:layout_marginBottom="@dimen/small_margin">
+
+                <EditText
+                    android:id="@+id/et_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:lines="3"
+                    android:focusable="false"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:hint="@string/meal_details_in_arabic"
+                android:padding="@dimen/small_padding"
+                android:layout_marginBottom="@dimen/small_margin">
+
+                <EditText
+                    android:id="@+id/et_details_in_arabic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:lines="3"
+                    android:focusable="false"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding"
+            android:text="@string/extra_editing"
+            android:textSize="@dimen/medium_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_button"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_padding">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_extras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"/>
+
+            <Button
+                android:id="@+id/btn_add_extra"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:background="@drawable/yellow_button"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/add_extra"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding"
+            android:text="@string/meal_for"
+            android:textSize="@dimen/medium_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_button"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_padding">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_for"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"/>
+
+            <Button
+                android:id="@+id/btn_add_for"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:background="@drawable/yellow_button"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/add"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_publish"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:background="@drawable/yellow_button"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:foreground="?selectableItemBackground"
+            android:text="@string/edit_meal"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

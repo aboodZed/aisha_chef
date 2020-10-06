@@ -1,0 +1,4 @@
+include ':alipaySdk-15.5.9'
+include ':oppwa.mobile'
+rootProject.name='Aisha'
+include ':app'

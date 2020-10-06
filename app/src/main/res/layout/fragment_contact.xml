@@ -1,0 +1,198 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.webapp.aisha.feture.profile.contact.ContactFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding"
+            android:text="@string/contact_us"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_button"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_padding">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:src="@drawable/bg_contact_us" />
+
+            <LinearLayout
+                android:id="@+id/ll_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/little_padding"
+                    android:src="@drawable/ic_call" />
+
+                <TextView
+                    android:id="@+id/tv_tel_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:background="@drawable/white_button"
+                    android:textAlignment="viewStart"
+                    android:padding="@dimen/small_padding"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/little_padding"
+                    android:src="@drawable/ic_mail" />
+
+                <TextView
+                    android:id="@+id/tv_mail_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:background="@drawable/white_button"
+                    android:textAlignment="viewStart"
+                    android:padding="@dimen/small_padding"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_text" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/medium_margin"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/large_margin"
+                android:layout_marginEnd="@dimen/large_margin">
+
+                <ImageView
+                    android:id="@+id/iv_facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/small_padding"
+                    android:src="@drawable/ic_facebook" />
+
+                <ImageView
+                    android:id="@+id/iv_twitter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/small_padding"
+                    android:src="@drawable/ic_twitter" />
+
+                <ImageView
+                    android:id="@+id/iv_instgram"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/small_padding"
+                    android:src="@drawable/ic_instgram" />
+
+                <ImageView
+                    android:id="@+id/iv_linkin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/small_padding"
+                    android:src="@drawable/ic_linkin" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/medium_margin"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:text="@string/send_message"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:hint="@string/subject"
+                android:padding="@dimen/small_padding"
+                android:layout_marginBottom="@dimen/small_margin">
+
+                <EditText
+                    android:id="@+id/et_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:hint="@string/type_message"
+                android:padding="@dimen/small_padding"
+                android:layout_marginBottom="@dimen/small_margin">
+
+                <EditText
+                    android:id="@+id/et_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:lines="3" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_send"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@drawable/yellow_button"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/send"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

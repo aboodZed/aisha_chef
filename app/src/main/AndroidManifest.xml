@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.webapp.aisha">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.EXTERNAL_CONTENT_URI" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.webapp.aisha.utils.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--activities-->
+        <activity
+            android:name="com.webapp.aisha.feture.order.OrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.webapp.aisha.feture.subscribe.SubscribeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.webapp.aisha.feture.profile.ProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.webapp.aisha.feture.main.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.webapp.aisha.feture.meals.MealActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".MainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.webapp.aisha.feture.offers.OfferActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.webapp.aisha.feture.registration.RegistrationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.webapp.aisha.payment.CheckoutUIActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <data android:scheme="@string/checkout_ui_callback_scheme" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.oppwa.mobile.connect.checkout.dialog.CheckoutActivity"
+            tools:replace="android:theme"
+            android:theme="@style/CustomCheckoutTheme"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name="com.webapp.aisha.feture.splash.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--providers-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.webapp.aisha.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!--services-->
+        <service android:name=".services.firebase.fmc.MyFirebaseNotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--receiver-->
+        <receiver
+            android:name="com.webapp.aisha.payment.receiver.CheckoutBroadcastReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.oppwa.mobile.connect.service.ConnectService"
+            android:exported="false" />
+    </application>
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aisha.iml" filepath="$PROJECT_DIR$/Aisha.iml" group="Aisha" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Aisha-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Aisha-app.iml" group="Aisha/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/alipaySdk-15.5.9/alipaySdk-15.5.9.iml" filepath="$PROJECT_DIR$/.idea/modules/alipaySdk-15.5.9/alipaySdk-15.5.9.iml" group="Aisha/alipaySdk-15.5.9" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Aisha/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/oppwa.mobile/oppwa.mobile.iml" filepath="$PROJECT_DIR$/.idea/modules/oppwa.mobile/oppwa.mobile.iml" group="Aisha/oppwa.mobile" />
+    </modules>
+  </component>
+</project>
